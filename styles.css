@@ -17,7 +17,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
 }
 
 #display {
@@ -48,4 +49,25 @@ button {
 
 button:hover {
     background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    #display {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
 }
